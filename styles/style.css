@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
 body {
-    margin: 0 140px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     font-family: poppins;
+}
+
+header,
+main {
+    margin: 0 140px;
 }
 
 .banner {
@@ -105,10 +112,11 @@ body {
 
     border-radius: 5px;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.05);
-    padding: 5px;
     justify-content: center;
+}
 
-
+.blog-text {
+    padding: 5px;
 }
 
 .blog img {
@@ -120,4 +128,46 @@ body {
 p {
     display: inline-block;
     width: 272px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 130px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 30px;
+
+}
+
+hr {
+    width: 1000px;
+    border: none;
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    font-size: 30px;
+
+}
+
+.fa-brands {
+    color: white;
+
 }
