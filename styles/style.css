@@ -16,6 +16,7 @@
 
 .banner-image {
     width: 50%;
+    transform: scale(.75);
 
 }
 
@@ -27,10 +28,28 @@
 .banner-text p {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.banner-text a {
+    color: white;
+    background: #DD0000;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 16px 25px 16px 25px;
+
 }
 
 .banner-image img {
     width: 581px;
     height: 613px;
 
+    transition: img .5s ease-in-out;
+
+
+}
+
+.banner:hover .banner-image img {
+
+    transform: scale(1.35);
 }
