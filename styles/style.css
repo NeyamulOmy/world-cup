@@ -103,7 +103,8 @@ main {
     border-radius: 10px;
 }
 
-.blogs {
+.blogs,
+.schedules {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
@@ -190,6 +191,48 @@ hr {
 
 }
 
+.schedule img {
+    height: 56px;
+    width: 93px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.schedule {
+    border-radius: 5px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.05);
+    justify-content: center;
+}
+
+.schedule span {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.vs {
+    position: relative;
+    bottom: 20px;
+
+}
+
+.schedule h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.schedule h6 {
+    color: rgba(77, 77, 77, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /* Media query */
 
 /* Ipad  */
@@ -218,14 +261,16 @@ hr {
         padding-right: 20px;
         flex-direction: row;
         width: fit-content;
+        background-color: transparent;
         height: 80px;
         margin-bottom: 20px;
         margin-right: 0;
 
     }
 
-    .link a {
+    .links a {
         padding: 10px;
+        border: 1px solid gray;
     }
 
     .container {
@@ -238,7 +283,8 @@ hr {
         margin-bottom: 20px;
     }
 
-    .blogs {
+    .blogs,
+    .schedules {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
@@ -265,4 +311,75 @@ hr {
     }
 
 
+}
+
+/* smart phone  */
+@media only screen and (max-width:688px) {
+
+    header,
+    main,
+    .banner {
+        margin: 0;
+    }
+
+    .banner {
+        padding-right: 30px;
+        overflow: hidden;
+    }
+
+    .banner-text h2 {
+        font-size: 50px;
+        margin: 0;
+        row-gap: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .links {
+        column-gap: 5px;
+        padding: 0;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+        margin-right: 0;
+        background-color: transparent;
+
+    }
+
+    .links a {
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .container {
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .blogs,
+    .schedules {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
