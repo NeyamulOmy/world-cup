@@ -48,11 +48,19 @@ main {
 
 .banner-text a {
     color: white;
-    background: #DD0000;
+    background-color: #DD0000;
     border-radius: 5px;
     text-decoration: none;
     padding: 16px 25px 16px 25px;
+    width: fit-content;
+    margin-bottom: 10px;
+    transition: color, background-color;
 
+}
+
+.banner-text a:hover {
+    background-color: White;
+    color: #DD0000;
 }
 
 .banner-image img {
@@ -96,7 +104,7 @@ main {
     background-color: white;
     text-decoration: none;
     color: black;
-    width: 153px;
+    width: 140px;
     text-align: center;
     margin-bottom: 30px;
     padding: 17px 39px 17px 39px;
